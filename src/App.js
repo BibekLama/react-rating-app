@@ -1,25 +1,24 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import { Switch, Route, Redirect } from 'react-router-dom';
+import PublicLayout from './pages';
+import AdminLayout from './admin';
+import {Login} from './admin/pages';
+import UserLogin from './pages/Login';
+import PageNotFound from './pages/PageNotFound';
 
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Switch>
+      <Redirect exact from="/" to="/public" />
+      <Redirect exact from="/admin" to="/admin/dashboard" />
+      <Route path="/public" component={PublicLayout}/>
+      <Route path="/login" component={UserLogin}/>
+      <Route path="/admin/login" component={Login}/>
+      <Route path="/admin" component={AdminLayout}/>
+      <Route path="/*" component={PageNotFound}/>
+    </Switch>
   );
 }
 

@@ -1,0 +1,19 @@
+.login{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f7f7f7;
+}
+
+.login .card{
+    border-radius: 15px;
+}
+
+.login .card .card-footer{
+    background: none;
+}
+
+.login .btn{
+    padding: 8px 15px;
+}

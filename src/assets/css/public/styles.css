@@ -1,0 +1,124 @@
+html{
+    background: rgb(20, 20, 20);
+}
+.public-header.navbar{
+    background: rgb(231, 78, 7);
+}
+
+.footer{
+    background: rgb(20, 20, 20);
+}
+
+.primary-container{
+    background: #191919;
+}
+
+.secondary-container{
+    background: #222222;
+}
+
+.footer a{
+    color:#fff;
+}
+
+.footer a:hover{
+    text-decoration: none;
+    color: #eee
+}
+  
+.public-header .navbar-brand{
+    background: transparent;
+    box-shadow: none;
+}
+
+.public-header.navbar-dark .navbar-nav .nav-link{
+    color:#ffffff;
+}
+
+.public-header.navbar-dark .navbar-nav .nav-link.active{
+    color:rgba(255, 255, 255, 0.7);
+}
+
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+.main {
+    margin-top: 3.5rem;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+    top:30%;
+    z-index: 10;
+}
+
+.carousel-caption > p{
+    font-size: 1.5rem;
+}
+  
+/* Declare heights because of positioning of img element */
+
+.carousel-item {
+    height: 28rem;
+}
+
+.carousel-inner {
+    background: rgba(0,0,0,0.7);
+}
+
+.card{
+    color: #333;
+}
+
+.card:hover{
+    text-decoration: none;
+}
+
+.card > .card-img{
+    height: 14rem;
+    overflow: hidden;
+}
+
+.card > .card-body > .card-text{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow:ellipsis;
+}
+
+.video-box{
+    position: relative;
+}
+
+.video-box .loader{
+    position: absolute;
+    z-index: 1;
+    top: 48%;
+    bottom: auto;
+    left: 48%;
+    right: auto;
+}
+
+.media:hover{
+    text-decoration: none;
+}
+.movie-media .media-body  p{
+    text-overflow:ellipsis;
+    white-space: wrap;
+    overflow: hidden;
+    height:50px;
+}
+
+.movie-media .media-body{
+    padding: 15px 15px 15px 0;
+    box-sizing: border-box;
+}
+
+.rating-btn .btn:focus{
+    border:none;
+    box-shadow: none;
+}
+
+.watchlist .nav:hover{
+    text-decoration: none;
+}
